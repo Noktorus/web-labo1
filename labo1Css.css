@@ -1,0 +1,131 @@
+/* cssLabo1 */
+
+body{
+    margin: 0;
+    background-color: rgb(186, 114, 53);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 50px;
+    background-color: black;
+    height: 80px;
+}
+
+header ul{
+    height: 70px;
+    margin: 0;
+    display: flex;
+}
+
+header ul li{
+    display: flex;
+    padding-top: 6+px;
+
+    transition: 0.3s;
+}
+
+header ul li:hover{
+    border-bottom: solid #f0f0f0 3px;
+}
+
+header ul li.active{
+    /*background-color: #f0f0f0;*/
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+h1, h2, h3, a, p, footer p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(240,240,240);
+}
+
+h1{
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+h2, h3{
+    display: inline;
+}
+
+h3, a{
+    margin: 1em;
+    font-size: 1.3em;
+}
+
+
+.menu{
+    margin: 1em;
+}
+
+
+.menu .content{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu p{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 1.6em;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+.menu button{
+    margin-left: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#burger .content{
+    background-image: url("https://img.freepik.com/photos-gratuite/hamburger-maison-burger-legumes-frais-laitue-au-fromage-mayonnaise-servi-frites-morceaux-papier-brun-table-pierre-noire-concept-restauration-rapide-malbouffe_1150-41842.jpg?w=900&t=st=1694123455~exp=1694124055~hmac=d587816b62715d95d6577a898451b77cfe8ecd072cf6b26017981db767f0cbf8");
+}
+#subway .content{
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-laterale-sandwich-pain-blanc-viande-grillee-escalope-fromage-laitue-frites-mayo-ketchup-planchejpg_141793-5081.jpg?w=900&t=st=1694123376~exp=1694123976~hmac=3fc02dea9f5f6358e7f928d840bf8a2d40815809c53f8f84b9569a7588877d62");
+}
+#kebab .content{
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-laterale-doner-poulet-grille-vert-laitue-tomate-frites-table_141793-4881.jpg?w=900&t=st=1694123638~exp=1694124238~hmac=a48aa288c5f35e096f5b50f938fac1ab8035ba1d7353c4be6b2122dff648628d");
+}
+
+footer{
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 800px){
+    header {
+        flex-direction: column;
+        overflow: hidden;
+
+        transition: 0.6s;
+    }
+
+    header:hover {
+        height: 150px;
+        padding-bottom: 8px;
+    }
+}
